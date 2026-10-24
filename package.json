@@ -1,0 +1,52 @@
+{
+  "name": "dsh-deepseek-ocean",
+  "version": "0.13.0",
+  "description": "Full-screen, immersive ASCII-painting shark backdrop for DeepSeek Harness: deep-blue glyph field, layered depth, click ripples and a Chinese settings panel.",
+  "type": "module",
+  "main": "index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "lib/client.js",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ascii-art",
+    "canvas",
+    "animation",
+    "ocean",
+    "shark"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "shot": "node scripts/shoot.mjs",
+    "shot:software": "node scripts/shoot.mjs --engine software"
+  }
+}

@@ -1,0 +1,4 @@
+- insert:
+    - id: deep-ocean
+      name: dsh-deepseek-ocean
+      config: {}

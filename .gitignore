@@ -1,0 +1,10 @@
+node_modules/
+*.tgz
+*.bak.js
+.tmp*
+.DS_Store
+Thumbs.db
+shots/*
+!shots/final-hero.png
+!shots/final-panel.png
+!shots/final-glass.png

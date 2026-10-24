@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <style>
+      .ui { font-family: "Consolas", "Microsoft YaHei", monospace; }
+      .label { font-size: 11px; letter-spacing: 1.2px; }
+      .body { font-size: 13px; }
+      .muted { fill: #aeb4ba; }
+      .faint { fill: #8b9299; }
+      .card { fill: rgb(255,255,255); fill-opacity: 0.06; stroke: rgb(255,255,255); stroke-opacity: 0.10; }
+    </style>
+  </defs>
+
+  <!-- Shell surfaces from t3: 252 / 876 / 312, dark glass alpha 0.34-0.40 -->
+  <rect x="0" y="0" width="252" height="900" fill="rgb(27,27,28)" fill-opacity="0.40"/>
+  <rect x="252" y="0" width="876" height="900" fill="rgb(21,21,23)" fill-opacity="0.34"/>
+  <rect x="1128" y="0" width="312" height="900" fill="rgb(35,35,36)" fill-opacity="0.40"/>
+  <line x1="252" y1="0" x2="252" y2="900" stroke="rgb(255,255,255)" stroke-opacity="0.09"/>
+  <line x1="1128" y1="0" x2="1128" y2="900" stroke="rgb(255,255,255)" stroke-opacity="0.09"/>
+
+  <!-- Sidebar -->
+  <text x="18" y="38" class="ui label" fill="#e9edf0" font-weight="700">DEEP OCEAN</text>
+  <rect x="12" y="76" width="228" height="34" rx="7" class="card"/>
+  <text x="26" y="98" class="ui body" fill="#e7eaed">+  New session</text>
+  <rect x="12" y="120" width="228" height="34" rx="7" fill="rgb(255,255,255)" fill-opacity="0.075" stroke="rgb(255,255,255)" stroke-opacity="0.10"/>
+  <text x="26" y="142" class="ui body" fill="#f0f2f4">Full-window mount</text>
+  <text x="26" y="182" class="ui body" fill="#cfd3d6">Shark field v2</text>
+  <text x="26" y="218" class="ui body" fill="#cfd3d6">Design the ocean</text>
+  <text x="26" y="254" class="ui body" fill="#cfd3d6">Contrast budget</text>
+  <text x="18" y="870" class="ui body" fill="#aeb4ba">Settings / help</text>
+  <line x1="12" y1="840" x2="240" y2="840" stroke="rgb(255,255,255)" stroke-opacity="0.08"/>
+
+  <!-- Center -->
+  <text x="276" y="30" class="ui label" fill="#f9fafb">deepseek-ocean / t5</text>
+  <text x="1104" y="30" class="ui label muted" text-anchor="end">1440 x 900</text>
+  <line x1="252" y1="52" x2="1128" y2="52" stroke="rgb(255,255,255)" stroke-opacity="0.07"/>
+
+  <text x="294" y="92" class="ui body" fill="#f3f5f7">The ocean is mounted once, fixed to the viewport, and painted beneath every</text>
+  <text x="294" y="116" class="ui body" fill="#f3f5f7">shell surface. The sidebar, transcript and right rail are translucent glass,</text>
+  <text x="294" y="140" class="ui body" fill="#f3f5f7">so the shark letters continue behind the text instead of stopping at the column.</text>
+
+  <rect x="292" y="176" width="796" height="94" rx="9" fill="rgb(0,0,0)" fill-opacity="0.20" stroke="rgb(255,255,255)" stroke-opacity="0.09"/>
+  <text x="310" y="204" class="ui" font-size="12" fill="#dfe3e6">position: fixed; inset: 0; z-index: -1;</text>
+  <text x="310" y="228" class="ui" font-size="12" fill="#dfe3e6">--dsw-alias-bg-base: color-mix(... 34%, transparent);</text>
+  <text x="310" y="252" class="ui" font-size="11" fill="#8b9299">B: fog depth / density 60% / depth 85%</text>
+
+  <text x="294" y="308" class="ui body" fill="#dfe3e6">Primary text stays on its theme colour; only the background alpha changes.</text>
+  <text x="294" y="334" class="ui body faint">Letters at the near layer remain readable through the glass; the far school is haze.</text>
+
+  <rect x="292" y="690" width="796" height="1" fill="rgb(255,255,255)" fill-opacity="0.06"/>
+  <text x="294" y="722" class="ui label" fill="#f3f5f7">THE GLASS TEST</text>
+  <text x="294" y="748" class="ui body" fill="#cfd3d6">Same B settings as shots/b-1440x900.png, composited under the t3 shell surfaces.</text>
+  <text x="294" y="774" class="ui body" fill="#cfd3d6">No reflow, no extra scrollbar; only the backdrop changes.</text>
+
+  <!-- Composer -->
+  <rect x="292" y="820" width="796" height="48" rx="12" fill="rgb(10,12,14)" fill-opacity="0.62" stroke="rgb(255,255,255)" stroke-opacity="0.10"/>
+  <text x="310" y="849" class="ui body" fill="#aeb4ba">Ask anything...</text>
+  <circle cx="1064" cy="844" r="12" fill="rgb(255,255,255)" fill-opacity="0.09" stroke="rgb(255,255,255)" stroke-opacity="0.14"/>
+  <path d="M1059 844 L1069 844" stroke="rgb(255,255,255)" stroke-opacity="0.45" stroke-width="1.5"/>
+  <path d="M1065 840 L1069 844 L1065 848" fill="none" stroke="rgb(255,255,255)" stroke-opacity="0.45" stroke-width="1.5"/>
+
+  <!-- Right rail -->
+  <text x="1152" y="30" class="ui label muted">SESSION</text>
+  <rect x="1148" y="56" width="272" height="76" rx="9" class="card"/>
+  <text x="1162" y="82" class="ui body" fill="#f3f5f7">t5 review</text>
+  <text x="1162" y="106" class="ui body faint">A / B / C candidates</text>
+
+  <rect x="1148" y="144" width="272" height="76" rx="9" class="card"/>
+  <text x="1162" y="170" class="ui body" fill="#f3f5f7">Fog depth</text>
+  <text x="1162" y="194" class="ui body faint">B is the glass test</text>
+
+  <rect x="1148" y="232" width="272" height="76" rx="9" class="card"/>
+  <text x="1162" y="258" class="ui body" fill="#f3f5f7">Contrast budget</text>
+  <text x="1162" y="282" class="ui body faint">dark glass >= 4.5:1</text>
+
+  <text x="1152" y="870" class="ui label faint">t3 fixture / dark theme</text>
+</svg>
