@@ -4,7 +4,7 @@
 
 鱼不是贴图，而是由字符网格实时"画"出来的：每个格子按光照选择 ASCII 字符与蓝色梯度，整片海洋位于所有界面之下，并透过半透明玻璃界面若隐若现。
 
-![hero](shots/final-hero.png)
+![hero](shots/final-hero.gif)
 
 ## 特点
 
