@@ -310,7 +310,10 @@
     // A pending ResizeObserver callback would resize (and clear) the canvas
     // after this script returns, leaving the screenshot blank. Detach the
     // engine once the frame and the optional panel are in place.
-    if (engine && typeof engine.destroy === "function") engine.destroy();
+    if (params.get("live") === "1") {
+      engine.start();
+    } else if (engine && typeof engine.destroy === "function") engine.destroy();
+    state.engine = engine;
 
     window.__PREVIEW_INFO__ = info;
     html.dataset.preview = "ready";
